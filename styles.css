@@ -1,0 +1,67 @@
+body {
+    background: #352f5b;
+}
+
+.container {
+    max-width: 400px;
+}
+
+input[type=text],
+input[type=text]:focus {
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.todos li {
+    background: #423a6f;
+}
+
+.todos li:hover {
+    background: #423a6fa6;
+}
+
+.todos li:active {
+    background: #342e57a6;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.hovered {
+    border: solid gray;
+}
+
+.filtered {
+    display: none !important;
+}
+
+.search input:hover,
+.search input:focus-within {
+    animation: resizePlus 0.2s ease-in;
+    width: 376px;
+}
+
+.search input {
+    max-width: 400px;
+    animation: resizeMinus 0.3s ease-out;
+}
+
+@keyframes resizePlus {
+    from {
+        width: 225px;
+    }
+    to {
+        width: 376px;
+    }
+}
+
+@keyframes resizeMinus {
+    from {
+        width: 376px;
+    }
+    to {
+        width: 225px;
+    }
+}
